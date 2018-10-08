@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripReg.js"></script>
-    
+    <script src="js/modal.js"></script>
+    <link rel="stylesheet" href="css/LightBox.css">
     <title>MisPerros</title>
 </head>
 
@@ -37,7 +38,10 @@
                         <a class="prue" href="#">servicios </a>
                     </li>
                     <li>
-                        <a class="prue" href="#registro">contactanos </a>
+                        <a class="prue" href="#">contactanos </a>
+                    </li>
+                    <li>
+                        <a class="prue" href="registro.html">Adopta ya</a>
                     </li>
                 </ul>
 
@@ -151,169 +155,53 @@
 
 
     </section>
-    <div class="row center-xs galerias">
+    <section class="row">
+        <div class="galeria" id="fotografias" >
+            
+            <div class="col-xs-4">
+                <ul>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Oso.jpg" class="galeria__img" alt="oso">                        
+                    </li>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Maya.jpg" class="galeria__img" alt="maya">
+                    </li>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Wifi.jpg" class="galeria__img" alt="wifi">
+                    </li>
+                </ul>
 
-        <div class="col-xs-4 col-lg-1 galeria estilo1">
-            <a href="#img1">
-                <img src="img/rescatados/Oso.jpg" alt="galeria">
-            </a>
-            <a href="#img2">
-                <img src="img/rescatados/Maya.jpg" alt="galeria">
-            </a>
-            <a href="#img3">
-                <img src="img/rescatados/Wifi.jpg" alt="galeria">
-            </a>
+            </div>
+
+            <div class="col-xs-4">
+                <ul>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Chocolate.jpg" class="galeria__img" alt="chocolate">
+                    </li>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Pexel.jpg" class="galeria__img" alt="pexel">
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-xs-4">
+                <ul>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Bigotes.jpg" class="galeria__img" alt="bigotes">
+                    </li>
+                    <li class="galeria__item">
+                        <img src="IMG/rescatados/Luna.jpg" class="galeria__img" alt="luna">
+                    </li>
+                </ul>
+            </div>
+            <script src="Js/modal.js"></script>
         </div>
-        <div class="col-xs-4 col-lg-1 galeriaC">
-            <a href="#img4">
-                <img src=" img/rescatados/Chocolate.jpg" alt="galeria">
-            </a>
-            <a href="#img5">
-                <img src="img/rescatados/Pexel.jpg" alt="galeria">
-            </a>
-        </div>
-        <div class="col-xs-4 col-lg-1 galeriaD">
-            <a href="#img6">
-                <img src=" img/rescatados/Bigotes.jpg " alt="galeria">
-            </a>
-            <a href="#img7">
-                <img src=" img/rescatados/Luna.jpg" alt="galeria">
-            </a>
-        </div>
-
-
-    </div>
-    <div class="modal" id="img1">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img6">&#60;</a>
-            <a href="#img2">
-                <img src="img/rescatados/Oso.jpg" alt="galeria">
-            </a>
-            <a href="#img2">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-
-    <div class="modal" id="img2">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img1">&#60;</a>
-            <a href="#img3">
-                <img src="img/rescatados/Maya.jpg" alt="galeria">
-            </a>
-            <a href="#img3">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-
-    <div class="modal" id="img3">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img2">&#60;</a>
-            <a href="#img4">
-                <img src="img/rescatados/Wifi.jpg" alt="galeria">
-            </a>
-            <a href="#img4">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-
-    <div class="modal" id="img4">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img3">&#60;</a>
-            <a href="#img1">
-                <img src="img/rescatados/Chocolate.jpg" alt="galeria">
-            </a>
-            <a href="#img5">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img5">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img4">&#60;</a>
-            <a href="#img6">
-                <img src="img/rescatados/Pexel.jpg" alt="galeria">
-            </a>
-            <a href="#img6">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img6">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img5">&#60;</a>
-            <a href="#img7">
-                <img src=" img/rescatados/Bigotes.jpg" alt="galeria">
-            </a>
-            <a href="#img1">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img7">
-        <h3>Perros Rescatados</h3>
-        <div class="imagen">
-            <a href="#img6">&#60;</a>
-            <a href="#img1">
-                <img src=" img/rescatados/Luna.jpg" alt="galeria">
-            </a>
-            <a href="#img1">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
+    </section>
 
 
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="ezquinas">
 
-            <form id="registro" action="" method="POST">
-                <label class="diseñolabel" for="correo">Correo:</label>
-                <input type="email" id="Correo" class="diseños" name="correo" placeholder="ej: T.La.Creiste@alumnos.duoc.cl" required>
-                <br>
-                <br>
-                <label class="diseñolabel" for="rut">Rut:</label>
-                <input type="text" name="rut" placeholder="rut" class="diseños" required>
-                <br>
-                <br>
-                <label class="diseñolabel" for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" class="diseños" required>
-                <br>
-                <br>
-                <label class="diseñolabel" for="fechaNacimiento">Fecha de Nacimiento:</label>
-                <input type="date" name="fecha" id="fecha" min="1900-01-01" max="2000-12-31" class="diseños" value="20" required>
-                <h6>(Año anterior al 2001)</h6>
-                <br>
-                <br>
-                <label class="diseñolabel" for="numero">Telefono de contacto:</label>
-                <input type="number" name="numero" placeholder="numero" class="diseños" required>
-                <br>
-                <br>
-                <label class="diseñolabel" for="region">Region:</label>
-                <select id="regiones" class="diseños"></select>
-                <br>
-                <br>
-                <label class="diseñolabel" for="comunas">Comunas:</label>
-                <select class="diseños" id="comunas"></select>
-                <br>
-                <br>
-                <label class="diseñolabel" for="tipoVivienda">Tipo de Vivienda</label>
-                <select name="tipoVivienda" class="diseños">
-                    <option value="0">Casa con patio grande</option>
-                    <option value="1">casa con patio pequeño</option>
-                    <option value="2">casa sin patio</option>
-                    <option value="3">Departamento</option>
-                </select>
-                <br>
-                <br>
-
-                <button>Enviar</button>
-            </form>
-
-        </div>
-    </div>
 
 
 
