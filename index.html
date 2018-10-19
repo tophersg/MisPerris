@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/Slider.css">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/scripReg.js"></script>
     <script src="js/modal.js"></script>
     <link rel="stylesheet" href="css/LightBox.css">
@@ -21,32 +22,31 @@
     <!--Hola-->
 
     <section class="container-fluid">
-        
-        <header class="row ">
 
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="fondologo">
-                <img src="img/logo.png" alt="logo">
+        <header class="row center-xs " id="fondologo">
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <img id="logo" src="img/logo.png" alt="logo">
             </div>
-            <nav id="fondonav" class="col-xs-12 col-sm-6 col-md-8 col-lg-8 ">
-                <ul id="menu" class="row center-xs start-md">
-                    <li>
-                        <a class="prue" href="#">inicio </a>
-                    </li>
-                    <li>
-                        <a class="prue" href="#conocenos">quienes somos </a>
-                    </li>
-                    <li>
-                        <a class="prue" href="#">servicios </a>
-                    </li>
-                    <li>
-                        <a class="prue" href="#">contactanos </a>
-                    </li>
-                    <li>
-                        <a class="prue" href="registro.html">Adopta ya</a>
-                    </li>
-                </ul>
+            <ul id="menu" class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <li>
+                    <a class="prue" href="#">inicio </a>
+                </li>
+                <li>
+                    <a class="prue" href="#conocenos">quienes somos </a>
+                </li>
+                <li>
+                    <a class="prue" href="#">servicios </a>
+                </li>
+                <li>
+                    <a class="prue" href="#">contactanos </a>
+                </li>
+                <li>
+                    <a class="prue" href="registro.html">Adopta ya</a>
+                </li>
+            </ul>
 
-            </nav>
+
         </header>
 
 
@@ -112,8 +112,8 @@
                     </li>
                 </ul>
             </section>
-            <br/>
-            <br/>
+            <br />
+            <br />
         </aside>
 
 
@@ -123,29 +123,31 @@
                 <a name="conocenos"></a>
                 <a name="fin"></a>
                 <H1>RESCATE</H1>
-                <br/>
+                <br />
                 <h5 class="textoPlomo">ETAPA UNO</h5>
-                <br/>
+                <br />
                 <h2 class="textoPlomo">_____</h2>
-                <br/>
-                <p class="textoPlomo">Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarle
+                <br />
+                <p class="textoPlomo">Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los
+                    preparamos para buscarle
                     un hogar</p>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <img src="img/rescate.jpg" alt="perro" width="250" height="125">
 
 
             </article>
             <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="moverder">
                 <img src="img/crowfunding.jpg" alt="foto" width="250" height="200">
-                <br/>
+                <br />
                 <H1>CROWFUNDING</H1>
-                <br/>
+                <br />
                 <h5 class="textoPlomo">FINANCIAMINETO</h5>
-                <br/>
+                <br />
                 <h2 class="textoPlomo">______</h2>
-                <br/>
-                <p class="textoPlomo">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos
+                <br />
+                <p class="textoPlomo">Sigue nuestras redes sociales para informarte acerca de las diversas campañas y
+                    actividades que realizamos
                     para obtener Financiamiento y seguir ayudando </p>
                 <br>
                 <br>
@@ -156,52 +158,36 @@
 
 
     </section>
-    <section class="row">
-        <div class="galeria" id="fotografias" >
-            
-            <div class="col-xs-4">
-                <ul>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Oso.jpg" class="galeria__img" alt="oso">                        
-                    </li>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Maya.jpg" class="galeria__img" alt="maya">
-                    </li>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Wifi.jpg" class="galeria__img" alt="wifi">
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="col-xs-4">
-                <ul>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Chocolate.jpg" class="galeria__img" alt="chocolate">
-                    </li>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Pexel.jpg" class="galeria__img" alt="pexel">
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="col-xs-4">
-                <ul>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Bigotes.jpg" class="galeria__img" alt="bigotes">
-                    </li>
-                    <li class="galeria__item">
-                        <img src="IMG/rescatados/Luna.jpg" class="galeria__img" alt="luna">
-                    </li>
-                </ul>
-            </div>
-            <script src="Js/modal.js"></script>
+    <section class="galery row">
+        <div class="col-xs-4">
+            <a href="img/rescatados/Oso.jpg" data-lightbox="mygallery" data-title="Oso, es muy curioso">
+                <img src="img/rescatados/oso.jpg" alt="Oso" class="resca-img">
+            </a>
+            <a href="img/rescatados/Maya.jpg" data-lightbox="mygallery" data-title="Maya, es muy timida">
+                <img src="img/rescatados/Maya.jpg" alt="Maya" class="resca-img">
+            </a>
+            <a href="img/rescatados/Wifi.jpg" data-lightbox="mygallery" data-title="Wifi, es travieso">
+                <img src="img/rescatados/Wifi.jpg" alt="Wifi" class="resca-img">
+            </a>
         </div>
+        <div class="col-xs-4">
+            <a href="img/rescatados/Chocolate.jpg" data-lightbox="mygallery" data-title="Chocolate, muy leal">
+                <img src="img/rescatados/Chocolate.jpg" alt="Chocolate" class="resca-img">
+            </a>
+            <a href="img/rescatados/Pexel.jpg" data-lightbox="mygallery" data-title="Pexel, muy obediente">
+                <img src="img/rescatados/Pexel.jpg" alt="Pexel" class="resca-img">
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="img/rescatados/Bigotes.jpg" data-lightbox="mygallery" data-title="Bigotes, le gusta jugar todo el tiempo">
+                <img src="img/rescatados/Bigotes.jpg" alt="Bigotes" class="resca-img">
+            </a>
+            <a href="img/rescatados/Luna.jpg" data-lightbox="mygallery" data-title="Luna, es muy tranquila">
+                <img src="img/rescatados/Luna.jpg" alt="Luna" class="resca-img">
+            </a>
+        </div>
+
     </section>
-
-
-
 
 
 
@@ -213,7 +199,7 @@
         </footer>
     </div>
 
-   
+
 
 </body>
 

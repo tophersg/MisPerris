@@ -2,23 +2,20 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+/*Menu en header*/
 #fondologo{
     
     background: rgb(53, 185, 146);
-    
-  
 }
-#fondonav{
-    
-    background: rgb(53, 185, 146);
-    
-    
+#logo{
+    width: 250px;
 }
+
 .textoPlomo{
     color:rgb(133, 130, 130);
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -29,25 +26,33 @@
 #menu{
     list-style-type: none;
     margin:0;
-    text-align: center;
+
     
 }
 #menu li{
     display: inline;
    
 }
+
+
 #menu li a{
-    
     color: white;
-    font-size: 15px;
+    display: inline-block;
     text-decoration: none;
-    margin-right: 44px;
-    margin-left: 44px;
-    font-family: arial;
-    padding: 20px;   
-    display: block;
+    padding: 14px 16px;
+    
+    font-family: arial;  
+    
 }
 
+@media screen and (max-width: 400px) {
+
+    #menu li{
+        display: block;
+    }
+}
+
+/*Contacto*/
 .circulo{
   
     -moz-border-radius:50%;
@@ -219,33 +224,32 @@
     margin: 100px auto;
     border-radius: 6px;
     max-width: 500px;
-    text-align: left-center-right;
 }
-#menu li{
-    float: left;
-}
-#menu li a{
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    padding: 14px 16px;
+/*Galeria de imagenes*/
+.galery{
+    background: #6dccaa;
+    padding-top: 10px;
     
-    font-family: arial;  
+}
+.resca-img{
+    padding: 5px;
+    transition: 1s;
 }
 
-
-boton{
-    border-radius: 50%;
-    padding: 1%;
-    padding-bottom: 0%;
-    background: rgb(53, 185, 146);
+.resca-img:hover{
+    transform: scale(1.1);
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
+/**/
+
 
 #ezquinas{
     background: rgb(39, 168, 130);
     text-align: center;
     padding: 10%;
-    
     
 }
 .diseños{
