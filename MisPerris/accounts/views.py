@@ -22,7 +22,7 @@ def login_view(request):
             # log the user in
             user = form.get_user()
             login(request, user)
-            return redirect('perris:home')
+            return redirect('perris:listar')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', { 'form': form })

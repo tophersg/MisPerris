@@ -17,6 +17,9 @@ def post_list(request):
 def home(request):
     return render(request,'Main.html')
 
+def usuario(request):
+    return render(request,'MainUsuario.html')
+
 
 def Registro(request):
     if request.method == 'POST':
