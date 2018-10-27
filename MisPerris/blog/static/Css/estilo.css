@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Menu en header*/
+#fondologo{
+    
+    background: rgb(53, 185, 146);
+}
+#logo{
+    width: 250px;
+}
+
+.textoPlomo{
+    color:rgb(133, 130, 130);
+    
+}
+
+
+.prue:hover{
+    transition: 1s;
+    background:rgb(116, 226, 165);
+}
+#menu{
+    list-style-type: none;
+    margin:0;
+
+    
+}
+#menu li{
+    display: inline;
+    text-align: left;
+}
+
+
+#menu li a{
+   
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    
+    font-family: arial;  
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    #menu li{
+        display: block;
+        text-align: center;
+    }
+}
+
+/*Contacto*/
+.circulo{
+  
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius: 50%;
+    
+    background-color: white;
+}
+.contacto{
+
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    
+}
+.contacto li{
+ float: left;
+}
+
+.contacto li a{
+    color: rgb(253, 253, 253);
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: arial;  
+    font-size: 20px;
+}
+
+#icons{
+    list-style-type: none;
+    cursor: pointer;
+    margin:0;
+    padding:0;
+    text-align: center;
+
+    
+}
+#icons li{
+    display: inline;
+    margin-right: 5px;
+}
+
+
+#icons li a{
+    color: rgb(39, 168, 130);
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;  
+}
+
+.imag{
+    background: rgb(39, 168, 130);
+    padding: 15px;
+    
+}
+.fondosect{
+    background: rgb(39, 168, 130);
+    padding: 20px;
+
+}
+#fondo{
+    
+    width: 700px;
+    height: 400px;
+}
+.boton2{
+    text-decoration:none;
+    padding:5px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 5%;
+    font-weight: 800;
+}
+.boton2:hover{
+    color: #ffffff;
+    background-color: #6dccaa;
+    transition: 1s;
+    border: 3px solid #035538;
+}
+
+#piedepaguina{
+
+    background-color: rgba(67, 68, 68, 0.404);
+    
+    padding-bottom: 30px;
+   }
+
+ 
+   #moverisq{
+    width: 100%;
+    text-align: right;
+    float: right;
+    padding: 10px;
+   }
+   #moverder{
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-top: 30px;
+    padding: 10px;
+    
+   }
+
+   /* Contenedor de slider*/
+ 
+   .contenedor-slider {
+    margin: auto;
+    width: 85% ;
+    max-width: 1000px;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 300%;
+  }
+  
+  .slider__section {
+    width: 100%;
+  }
+  
+  .slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-prev, .btn-next {
+    width: 40px;
+    height: 40px;
+    background: rgba(128, 248, 208, 0.7);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;  
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+  }
+  
+  .btn-prev:hover, .btn-next:hover {
+    background: white;
+  }
+  
+  .btn-prev {
+    left: 10px;
+  }
+  
+  .btn-next {
+    right: 10px;
+  }
+  
+
+  /* Fin de Slider*/
+  #TextoCodigo {
+
+    background: #f0f0f0;
+    width: 500px;
+    border: 1px solid white;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 6px;
+    max-width: 500px;
+}
+/*Galeria de imagenes*/
+.galery{
+    background: #6dccaa;
+    padding-top: 10px;
+    
+}
+.resca-img{
+    padding: 5px;
+    transition: 1s;
+}
+
+.resca-img:hover{
+    transform: scale(1.1);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/**/
+
+
+#ezquinas{
+    background: rgb(39, 168, 130);
+    text-align: center;
+    padding: 10%;
+    
+}
+.diseños{
+    
+  font-size: 0.875em;
+  width: 300px;
+  height: 35px;
+  
+}
+
+.diseñolabel {
+    display: block;
+    margin: .5em 0 0 0;
+}
+button{
+    width: 100px;
+    height: 30px;
+}
