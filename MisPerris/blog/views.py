@@ -2,8 +2,9 @@ from django.shortcuts import render,redirect
 from django.utils import timezone
 from .models import Post 
 from django.http import HttpResponse
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import Registro
+
 # Create your views here.
 
 
@@ -27,9 +28,4 @@ def Registro(request):
     else:
         form = UserCreationForm()
     return render(request,'blog/Registro.html',{'form':form})
-
-
-
-
-
 
