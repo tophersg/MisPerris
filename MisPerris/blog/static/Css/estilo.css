@@ -5,11 +5,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 /* Login de mis perris*/
-#login{
+#session{
     background: rgb(53, 185, 146);
-    width: 250px;
-    height: 600px;
-    text-align: center;
+    height: 500px;
 }
 /*Menu en header*/
 #fondologo{
