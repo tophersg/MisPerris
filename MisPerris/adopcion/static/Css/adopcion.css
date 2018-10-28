@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    font-size: 30px;
+    color:#ffffff;
+    
+}
+.fondo{
+    background: rgb(53, 185, 146);
+    padding: 20px;
+}
+.adopcion{
+    background: #ffffff;
+    padding: 20px;
+}

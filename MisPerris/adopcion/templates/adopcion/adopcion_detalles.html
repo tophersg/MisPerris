@@ -1,0 +1,23 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'Css/adopcion.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/flexboxgrid.css' %}">
+    <title>{{ adopciones.titulo }}</title>
+</head>
+<body>
+    
+</body>
+</html>
+{% block content %}
+<div class="article-detail">
+    <div class="article">
+        
+        <h2>{{ adopcion.titulo }}</h2>
+        <p>{{ adopcion.descripcion }}</p>
+        <p>{{ adopcion.fecha_publicacion }}</p>
+    </div>
+</div>
+{% endblock %}
