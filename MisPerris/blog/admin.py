@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import Post
-from .models import Registro
+from .models import Postulantes
 
-admin.site.register(Post)
-admin.site.register(Registro)
+
+admin.site.register(Postulantes)
 

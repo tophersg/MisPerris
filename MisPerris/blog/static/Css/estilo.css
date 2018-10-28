@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /*Menu en header*/
 #fondologo{
     
@@ -51,7 +50,6 @@
 
     #menu li{
         display: block;
-        text-align: center;
     }
 }
 
