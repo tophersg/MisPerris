@@ -16,10 +16,11 @@
     </header>
 
     <div class="row ">
+
         {% for adopciones in adopciones %}
-        <div class="col-xs-12 adopcion">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 adopcion">
+            <img id="foto" src="{{ adopciones.thumb.url }}" />
             <h1><a href="{% url 'adopcion:detalles' titulo=adopciones.titulo %}">{{ adopciones.titulo }}</a></h1>
-            <p>{{ adopciones.descripcion }}</p>
             <p>{{ adopciones.fecha_publicacion }}</p>
         </div>
         {% endfor %}

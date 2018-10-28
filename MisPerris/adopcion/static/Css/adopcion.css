@@ -18,3 +18,31 @@
     background: #ffffff;
     padding: 20px;
 }
+/*Estilo de los detalles de cada uno */ 
+#titdetalle{
+font-size: 40px;
+color: #ffffff
+}
+#foto{
+    width: 300px;
+    height: 500;
+   
+
+}
+.subfondo{
+    background:rgb(116, 226, 165);
+
+}
+.letradet{
+    color: #ffffff;
+    font-size: 20px;
+}
+#centrartext{
+    padding-top: 100px
+}
+@media screen and (max-width: 600px) {
+
+    #centrartext{
+        padding-top: 2px;
+    }
+}
