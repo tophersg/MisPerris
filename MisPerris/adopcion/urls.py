@@ -1,7 +1,9 @@
 from django.conf.urls import url
 from . import views
-app_name= 'adopciones'
+
+app_name= 'adopcion'
+
 urlpatterns = [
-   url(r'^$', views.adopcion_lista, name="list"),
+   url(r'^adoptar$', views.adopcion_lista, name="lista"),
 
 ]

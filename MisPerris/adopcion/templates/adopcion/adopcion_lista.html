@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ayudenme</title>
+</head>
+
+<body>
+    {% block content%}
+    <h1>Perros sin dueños :´(</h1>
+    <div id="fondologo">
+        {% for adopcion in adopcion %}
+        <div class="adopcion">
+            <h2><a href="{% url 'adopcion:detail' slug=adopcion.slug %}">{{ adopcion.titulo }}</a></h2>
+            <p>{{ adopcion.descripcion }}</p>
+            <p>{{ adopcion.fecha_publicacion }}</p>
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</body>
+
+</html>
