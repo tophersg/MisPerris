@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sesion{
+    background: rgb(53, 185, 146);
+    height: 300px;
+    color: #ffffff;
+    max-width: 500px;
+    float: left;
+    
+}
+span{
+    font-size: 10px;
+}
+ul, li{
+    font-size: 10px;
+    text-decoration: none;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+   
+    
+}
+label{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+
