@@ -26,3 +26,5 @@ class Postulantes(models.Model):
         permissions = (
             ('postulante', _('Postulante')),
         )  
+
+    
