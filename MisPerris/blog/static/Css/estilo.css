@@ -4,11 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Login de mis perris*/
-#session{
-    background: rgb(53, 185, 146);
-    height: 500px;
-}
+
 /*Menu en header*/
 #fondologo{
     
