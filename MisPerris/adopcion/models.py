@@ -6,6 +6,8 @@ class Perritos(models.Model):
     descripcion = models.TextField()
     fecha_publicacion = models.DateTimeField(auto_now_add=True)
     thumb = models.ImageField(default='default.png', blank=True)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+
     # add in author later
 
     def __str__(self):

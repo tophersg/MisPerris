@@ -10,10 +10,10 @@ def post_list(request):
 def home(request):
     return render(request,'Main.html')
 
+def administrador(request):
+    return render(request,'blog/Base_registro.html')
 
-def usuario(request):
-    return render(request,'MainUsuario.html')    
-    
+
 def postulante_nuevo(request):
     if request.method == "POST":
         form = PostulantesForm(request.POST)

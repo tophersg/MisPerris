@@ -43,12 +43,20 @@
                 <li>
                     <a class="prue" href="http://127.0.0.1:8000/adopcion/adoptar/">Adoptar Perrito </a>
                 </li>
-
-
+                {% if user.is_superuser %}
+                <li>
+                    <a class="prue" href="http://127.0.0.1:8000/administrar/">Administar Sistema </a>
+                </li>
+                {% endif %}
             </ul>
-            <div>
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                 <p href="">Sesion de:{{request.user}}</p>
+                <form class="logout-link" action="{% url 'accounts:logout' %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Salir</button>
+                </form>
             </div>
+
 
         </header>
         {% else %}

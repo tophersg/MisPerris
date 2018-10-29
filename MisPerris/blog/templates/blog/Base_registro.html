@@ -10,24 +10,23 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <title>Administrador</title>
 </head>
 
 <body>
-    <div class="page-header">
-        <h1>
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-            <a href="/">Django Girls Blog</a>
-        </h1>
-    </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% block content %}
-                {% endblock %}
-            </div>
-        </div>
-    </div>
+    <header class="row center-xs">
+        <h1 class="col-xs-12">Bienvenido admin</h1>
+
+    </header>
+    <nav class="row ">
+        <ul>
+            <li><a href="http://127.0.0.1:8000/adopcion/rescate/">Registrar Nuevo perro</a></li>
+        </ul>
+
+    </nav>
 </body>
 
 </html>
