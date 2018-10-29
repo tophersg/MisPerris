@@ -37,3 +37,12 @@ def rescate_editar(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/Nuevo_formulario.html', {'form': form})    
+
+def rescate_borrar(request):
+    adopcion = get_object_or_404(Perritos)
+    if request.method == 'POST':
+        Perritos.delete(post)
+        return redirect('http://127.0.0.1:8000/adopcion/adoptar/')
+    else:
+        formb = RescatesForm(instance=post)
+    return render(request, 'http://127.0.0.1:8000/adopcion/adoptar/', {'form':form})    

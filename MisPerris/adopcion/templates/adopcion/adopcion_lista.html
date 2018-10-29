@@ -7,6 +7,7 @@
     <title>Ayudenme</title>
     <link rel="stylesheet" href="{% static 'Css/adopcion.css' %}">
     <link rel="stylesheet" href="{% static 'Css/flexboxgrid.css' %}">
+    
 </head>
 
 <body>
@@ -22,6 +23,14 @@
             <img id="foto" src="{{ adopciones.thumb.url }}" />
             <h1><a href="{% url 'adopcion:detalles' titulo=adopciones.titulo %}">{{ adopciones.titulo }}</a></h1>
             <p>{{ adopciones.fecha_publicacion }}</p>
+            {% if user.is_superuser %}
+            <a href=""">
+                <span class="btn btn-danger">Borrar</span>
+            </a>
+            <a href=""">
+                    <span class="btn btn-danger">Editar</span>
+                </a>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
