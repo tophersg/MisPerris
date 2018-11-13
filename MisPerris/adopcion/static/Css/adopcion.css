@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo{
+    font-size: 30px;
+    color:#ffffff;
+    
+}
+.fondo{
+    background: rgb(53, 185, 146);
+    padding: 20px;
+}
+.adopcion{
+    background: #ffffff;
+    padding: 20px;
+}
+/*Estilo de los detalles de cada uno */ 
+#titdetalle{
+font-size: 40px;
+color: #ffffff
+}
+#foto{
+    width: 300px;
+    height: 500;
+   
+
+}
+.subfondo{
+    background:rgb(116, 226, 165);
+
+}
+.letradet{
+    color: #ffffff;
+    font-size: 20px;
+}
+#centrartext{
+    padding-top: 100px
+}
+@media screen and (max-width: 600px) {
+
+    #centrartext{
+        padding-top: 2px;
+    }
+}

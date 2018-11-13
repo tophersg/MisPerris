@@ -12,7 +12,8 @@ class Postulantes(models.Model):
     region = models.CharField(max_length=30)
     Comuna = models.CharField(max_length=30)
     Vivienda = models.CharField(max_length=20)
-   
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+
 
     def publish(self):
         
@@ -26,3 +27,5 @@ class Postulantes(models.Model):
         permissions = (
             ('postulante', _('Postulante')),
         )  
+
+    
