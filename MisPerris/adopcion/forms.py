@@ -5,5 +5,5 @@ class RescatesForm(forms.ModelForm):
 
     class Meta:
         model = Perritos
-        fields = ('titulo', 'descripcion','thumb','author')
+        fields = ('titulo', 'descripcion','thumb')
  

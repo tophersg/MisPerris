@@ -6,7 +6,7 @@ from blog.quickstart import views2
 router = routers.DefaultRouter()
 router.register(r'users', views2.UserViewSet)
 router.register(r'groups', views2.GroupViewSet)
-
+router.register(r'perritos',views2.PerritosViewSet)
 
 app_name= 'perris'
 
