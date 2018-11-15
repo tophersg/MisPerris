@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+
 from blog import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
@@ -25,7 +26,11 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     url(r'^adopcion/', include('adopcion.urls')),
     url(r'', include('blog.urls')),
-    url(r'^$',views.home)
+    
+    url(r'^$',views.home),
+    url(r'^',include('django.contrib.auth.urls')),
+    url('^oauth/',include('social_django.urls',namespace="social"))
+   
 ]
 
 urlpatterns += staticfiles_urlpatterns()
