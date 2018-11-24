@@ -1,0 +1,40 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ayudenme</title>
+    <link rel="stylesheet" href="{% static 'Css/adopcion.css' %}">
+    <link rel="stylesheet" href="{% static 'Css/flexboxgrid.css' %}">
+    
+</head>
+
+<body>
+    {% block content%}
+    <header class="row center-xs fondo">
+        <h1 id="titulo">Perritos en busca de hogar</h1>
+    </header>
+
+    <div class="row center-xs ">
+
+        {% for adopciones in adopciones %}
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 adopcion">
+            <img id="foto" src="{{ adopciones.thumb.url }}" />
+            <h1><a href="{% url 'adopcion:detalles' titulo=adopciones.titulo %}">{{ adopciones.titulo }}</a></h1>
+            <p>{{ adopciones.fecha_publicacion }}</p>
+            {% if user.is_superuser %}
+            <a href=""">
+                <span class="btn btn-danger">Borrar</span>
+            </a>
+            <a href=""">
+                    <span class="btn btn-danger">Editar</span>
+                </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+</body>
+
+</html>
